@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { * { @apply border-slate-200; } body { @apply bg-mist text-ink antialiased; } button, input, textarea, select { font: inherit; } }
+@layer components { .card { @apply rounded-3xl border border-white/70 bg-white shadow-sm; } .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-50; } .btn-primary { @apply btn bg-moss text-white hover:bg-ink; } .btn-soft { @apply btn bg-lime text-ink hover:bg-[#c7ee5e]; } .input { @apply w-full rounded-xl border bg-white px-3 py-2.5 outline-none transition focus:border-moss focus:ring-2 focus:ring-moss/15; } .label { @apply mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-500; } }
